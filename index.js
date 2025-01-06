@@ -25,6 +25,7 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
+<<<<<<< HEAD
 import cors from 'cors';
 import router from './routes/userRoute.js';
 
@@ -32,6 +33,12 @@ const app = express();
 
 app.use(bodyParser.json());
 app.use(cors());
+=======
+import router from './routes/userRoute.js';
+const app = express();
+
+app.use(bodyParser.json());
+>>>>>>> bb71f4d27c78c1c09334c25a0e8d8858adaf239d
 dotenv.config();
 const PORT = process.env.PORT || 8000;
 const MONGOURL = process.env.MONGO_URL;
