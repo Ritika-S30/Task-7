@@ -38,7 +38,7 @@ router.param("id",(req,res,next,id)=>{
 
     
 
-//module.exports=router;
+module.exports=router;
 
 
 //route.get('/:id'.((req,res)=>{
