@@ -30,8 +30,8 @@ import router from './routes/userRoute.js';
 
 const app = express();
 
-app.use(cors());
 app.use(bodyParser.json());
+app.use(cors());
 dotenv.config();
 const PORT = process.env.PORT || 8000;
 const MONGOURL = process.env.MONGO_URL;
