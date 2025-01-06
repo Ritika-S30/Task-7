@@ -26,11 +26,12 @@ import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import router from './routes/userRoute.js';
-import cors from 'cors'
+import cors from 'cors';
+
 const app = express();
 
+app.use(cors());
 app.use(bodyParser.json());
-app.use(cors())
 dotenv.config();
 const PORT = process.env.PORT || 8000;
 const MONGOURL = process.env.MONGO_URL;
